@@ -26,6 +26,9 @@ public class UseController {
 
     @PostMapping
     public User createUser(@RequestBody User user) {
+    
+	System.out.println("Criando user");
+    
         users.add(user);
         return user;
     }

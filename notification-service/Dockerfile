@@ -9,7 +9,7 @@ RUN mvn clean install
 
 FROM openjdk:21-jdk-slim
 
-EXPOSE 8081
+EXPOSE 8083
 
 COPY --from=build target/notification-service-0.0.1-SNAPSHOT.jar app.jar
 COPY --from=build src/main/resources/application.yml application.yml

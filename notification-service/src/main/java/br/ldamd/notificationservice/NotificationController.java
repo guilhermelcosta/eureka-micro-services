@@ -26,6 +26,9 @@ public class NotificationController {
 
     @PostMapping
     public Notification createNotification(@RequestBody Notification notification) {
+    
+    	System.out.println("Criando notificacao");
+    
         notifications.add(notification);
         return notification;
     }
